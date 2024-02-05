@@ -127,6 +127,7 @@ venv/
 ENV/
 env.bak/
 venv.bak/
+dlxray/
 
 # Spyder project settings
 .spyderproject
