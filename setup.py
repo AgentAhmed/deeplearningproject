@@ -1,7 +1,7 @@
-from setuptools import setup, find_packages
+from setuptools import find_packages,setup
 from typing import List
 
-HYPEN_E_DOT = "-e."
+HYPEN_E_DOT = '-e .'
 
 
 
@@ -18,10 +18,14 @@ def get_requirements(file_path:str)->List[str]:
 
 
 setup(
-    name="Xray",
-    version="0.0.1",
-    author="Ahmed",
-    author_email="ahmed.mca18@gmail.com",
-    install_requires=get_requirements("requirements_dev.txt"),  # Add the correct path to your requirements file
-    packages=find_packages(),
+
+name="Xray",
+version="0.0.1",
+author="Ahmed",
+author_email="ahmed.mca18@gmail.com",
+install_requires=get_requirements("requirements_dev.txt"),
+package=find_packages()
+
 )
+
+
